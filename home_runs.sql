@@ -15,5 +15,5 @@ create table home_runs as
            when VisitorRunsScored>HomeRunsScore then 'V' 
            when VisitorRunsScored<HomeRunsScore then 'H' 
            else 'T' 
-         end as WINNER 
+         end as WINNER,
    from gamelogs
